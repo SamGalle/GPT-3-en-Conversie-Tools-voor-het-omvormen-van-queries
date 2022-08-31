@@ -5,15 +5,19 @@ Temperatuur optie op 0.72 zetten <br />
 Ada gaf de volgende drie queries terug, waarvan de eerste de meest correcte is
 
 ### SQL Query
- - SELECT Tabel1.name, Tabel1.date, Tabel1.catID, Tabel1.ite, Tabel1.isuD 
+```
+SELECT Tabel1.name, Tabel1.date, Tabel1.catID, Tabel1.ite, Tabel1.isuD 
 from tab1 
 INNER JOIN tab2 
 ON tb2.date = tb
-
- - INSERT INTO Tabel1 (date, time, timezone) VALUES ('2018-12-15 21:00:00', 'australian') 1
-
- - SELECT COUNT(*) AS "Count" FROM Tabel1 IPRAttrs QoS VirtuallyAll X-Ray
-
+```
+```
+INSERT INTO Tabel1 (date, time, timezone) VALUES ('2018-12-15 21:00:00', 'australian') 1
+```
+```
+SELECT COUNT(*) AS "Count" 
+FROM Tabel1 IPRAttrs QoS VirtuallyAll X-Ray
+```
 
 ## Proberen voor een MQL query te genereren
 ### Poging 1
