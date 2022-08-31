@@ -1,23 +1,23 @@
 In this file you will find MQL queries converted from the SQL queries by the MongoTranslate function from the MongoDB system
 
-QUERY 1
--------------------------------------
+### Query 1 
+```
 db = db.getSiblingDB("admin");
 db.getCollection("Tabel1").find({});
---------------------------------------
+```
 
-QUERY 2
--------------------------------------
+### Query 2
+```
 db = db.getSiblingDB("admin");
 db.getCollection("Tabel1").find(
     {
         "nummer" : NumberLong(5)
     }
 );
--------------------------------------
+```
 
-QUERY 3
--------------------------------------
+### Query 3
+```
 db = db.getSiblingDB("admin");
 db.getCollection("Tabel1").find(
     {
@@ -30,10 +30,10 @@ db.getCollection("Tabel1").find(
         "nummer" : NumberInt(-1)
     }
 );
--------------------------------------
+```
 
-QUERY 4
--------------------------------------
+### Query 4
+```
 db = db.getSiblingDB("admin");
 db.getCollection("Tabel1").aggregate(
     [
@@ -74,10 +74,9 @@ db.getCollection("Tabel1").aggregate(
         "allowDiskUse" : true
     }
 );
--------------------------------------
-
-QUERY 5
--------------------------------------
+```
+### Query 5
+```
 db = db.getSiblingDB("admin");
 db.getCollection("Tabel1").aggregate(
     [
@@ -125,4 +124,4 @@ db.getCollection("Tabel1").aggregate(
         "allowDiskUse" : true
     }
 );
--------------------------------------
+```
